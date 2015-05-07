@@ -1,0 +1,23 @@
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: shorty_test
+  pool: 5
+  username: 
+  password:
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: shorty_development
+  pool: 5
+  username: 
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: shorty_production
+  pool: 5
+  username: 
+  password:

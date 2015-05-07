@@ -1,0 +1,17 @@
+
+.links-wrapper
+  - @links.each do |link|
+    .link
+      .link-in-url
+        = link.in_url
+      .link-out-url
+        = link.out_url
+      .link-click-count
+        = link.clicks
+      = link_to 'Show', link
+      = link_to 'Edit', edit_link_path(link)
+      = link_to 'Destroy', link, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+  %br
+
+  = link_to 'New Link', new_link_path

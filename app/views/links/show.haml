@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b In url:
+  = @link.in_url
+%p
+  %b Out url:
+  = @link.out_url
+%p
+  %b CLick count:
+  = @link.clicks
+
+= link_to 'Edit', edit_link_path(@link)
+\|
+= link_to 'Back', links_path
